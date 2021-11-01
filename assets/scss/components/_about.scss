@@ -1,0 +1,20 @@
+/* ===================ABOUT======================= */
+.about__container {
+  row-gap: 2rem;
+  &__data {
+    text-align: center;
+  }
+  &__description {
+    margin-bottom: var(--mb-2);
+  }
+  &__img {
+    width: 200px;
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about__description {
+    margin-bottom: var(--mb-2);
+  }
+}
