@@ -13,8 +13,6 @@
   }
 }
 
-@media screen and (max-width: 320px) {
-  .about__description {
-    margin-bottom: var(--mb-2);
-  }
+.about__description {
+  margin-bottom: var(--mb-2);
 }

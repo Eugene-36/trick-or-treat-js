@@ -10,6 +10,7 @@
   z-index: var(--z-tooltip);
   opacity: 0.8;
   transition: 0.4s;
+  color: #fff;
 
   &:hover {
     background: var(--container-color);

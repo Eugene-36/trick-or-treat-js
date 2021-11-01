@@ -312,6 +312,23 @@ button {
   border-radius: 0.5rem;
 }
 
+@media screen and (min-width: 992px) {
+  .home__indicator {
+    top: initial;
+    right: initial;
+    bottom: 2%;
+    left: 45%;
+  }
+  .home__indicator::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 65px;
+    background-color: var(--title-color);
+    top: 0;
+    right: 45%;
+  }
+}
 /**======================BUTTONS========================= */
 .buttons {
   display: inline-block;
@@ -382,11 +399,10 @@ button {
   justify-self: center;
 }
 
-@media screen and (max-width: 320px) {
-  .about__description {
-    margin-bottom: var(--mb-2);
-  }
+.about__description {
+  margin-bottom: var(--mb-2);
 }
+
 /** ====================TRICK OR TREAT======================  */
 .trick__container {
   grid-template-columns: repeat(2, 1fr);
@@ -639,6 +655,7 @@ button {
   z-index: var(--z-tooltip);
   opacity: 0.8;
   transition: 0.4s;
+  color: #fff;
 }
 .scrollup:hover {
   background: var(--container-color);
@@ -814,7 +831,7 @@ button {
   }
   .home__img {
     height: 400px;
-    transform: translateY(-3rem);
+    transform: translateY(-5rem);
   }
   .home__indicator {
     top: initial;
